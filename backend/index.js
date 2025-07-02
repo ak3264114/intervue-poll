@@ -10,10 +10,11 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: 'https://intervue-poll-two.vercel.app',
+  origin: '*',
   methods: ['GET', 'POST'],
-  credentials: true
+  credentials: false // ⚠️ must be false when using origin: '*'
 }));
+
 
 app.use(morgan('combined'));
 
