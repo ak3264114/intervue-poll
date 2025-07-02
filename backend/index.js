@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: 'http://localhost:8080',
+  origin: 'https://intervue-poll-two.vercel.app',
   methods: ['GET', 'POST'],
   credentials: true
 }));
