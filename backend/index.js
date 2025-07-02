@@ -12,7 +12,7 @@ const server = http.createServer(app);
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST'],
-  credentials: false // ⚠️ must be false when using origin: '*'
+  credentials: false 
 }));
 
 

@@ -28,7 +28,7 @@ const StudentApp = () => {
 
         return () => {
             const socket = getSocket();
-            socket.removeAllListeners(); // Clean up listeners on unmount
+            socket.removeAllListeners(); 
         };
     }, []);
 
